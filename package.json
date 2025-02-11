@@ -1,0 +1,43 @@
+{
+  "name": "hungrybell",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve --open",
+    "build": "webpack build",
+    "build:dev": "webpack --mode=development",
+    "serve": "webpack serve",
+    "watch": "webpack --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mkangg/HungryBell.git"
+  },
+  "keywords": [],
+  "author": "Minji Kang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mkangg/HungryBell/issues"
+  },
+  "homepage": "https://github.com/mkangg/HungryBell#readme",
+  "dependencies": {
+    "html-loader": "^5.1.0",
+    "phaser": "^3.87.0",
+    "workbox-webpack-plugin": "^7.3.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@webpack-cli/generators": "^3.0.7",
+    "babel-loader": "^9.2.1",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.97.1",
+    "webpack-cli": "^6.0.1",
+    "webpack-dev-server": "^5.2.0"
+  }
+}
