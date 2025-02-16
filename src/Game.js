@@ -1,5 +1,5 @@
 import Phaser from "phaser"
-import bell from '../public/assets/bellbell.jpg'
+import bell from '../public/assets/bellMouthClosed.png'
 
 export default class Game extends Phaser.Scene {
     // constructor() {
