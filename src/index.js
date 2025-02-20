@@ -1,6 +1,7 @@
 import Phaser from 'phaser'
 import Welcome from './Welcome'
 import Game from './Game'
+import GameOver from './GameOver'
 
 const config = {
     type: Phaser.AUTO,
@@ -14,8 +15,8 @@ const config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 0 },
-            debug: true
+            gravity: { y: 150 },
+            debug: false
         }
     },
 }
@@ -24,4 +25,5 @@ const game = new Phaser.Game(config)
 
 game.scene.add('Welcome', Welcome)
 game.scene.add('Game', Game)
+game.scene.add('GameOver', GameOver)
 game.scene.start('Welcome')
