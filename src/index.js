@@ -1,8 +1,11 @@
+// importing Phaser and all scenes
 import Phaser from 'phaser'
+import Title from './Title'
 import Welcome from './Welcome'
 import Game from './Game'
 import GameOver from './GameOver'
 
+// configurations for the game
 const config = {
     type: Phaser.AUTO,
     width: 1280,
@@ -15,15 +18,18 @@ const config = {
     physics: {
         default: 'arcade',
         arcade: {
-            gravity: { y: 150 },
+            gravity: { y: 175 },
             debug: false
         }
     },
 }
 
+// creating game with custom configurations
 const game = new Phaser.Game(config)
 
+// adding all game scenes 
+game.scene.add('Title', Title)
 game.scene.add('Welcome', Welcome)
 game.scene.add('Game', Game)
 game.scene.add('GameOver', GameOver)
-game.scene.start('Welcome')
+game.scene.start('Title')
